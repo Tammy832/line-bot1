@@ -46,7 +46,7 @@ def handle_message(event):
         r = '你覺得呢?'
     elif msg == '你是誰?':
         r = '你的好朋友'
-    elif msg == '訂位':
+    elif '訂位' in msg:
         r = '請按以下連結...'
 
     line_bot_api.reply_message(
